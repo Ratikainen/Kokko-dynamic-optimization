@@ -86,6 +86,7 @@ forage <- function(dmin, dmax, c, f, maxt, maxc) {
   ## This plots coloured squares in the correct position on a graph.
   
   colour <- c("white", "blue")
+  require(lattice)
   require(grid)
   mypanel <- function(x, y, z, ...) {
     panel.levelplot(x, y, z, ...)
